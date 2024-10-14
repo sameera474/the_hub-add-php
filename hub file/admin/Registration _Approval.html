@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration Approval</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2QdJ2y3UuUj6F26xEV4+PbHe73Jj7ErDxNE7NkT4kz3c/vjJWPdAUmTR+5UIN+a7dEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            margin: 20px;
+        }
+        h2 {
+            color: black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f5eaea;
+            color:#333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .approve-btn {
+            background-color: #0f172b;
+            color: #fff;
+            padding: 6px 12px;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .approve-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pending Registrations</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Applying Country</th>
+                <th>No. of Adults</th>
+                <th>No. of Kids</th>
+                <th>Main Applicant Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Passport No</th>
+                <th>Passport Expiry</th>
+                <th>Marital Status</th>
+                <th>IELTS/PTE Results</th>
+                <th>Bachelor's/Master's Degree</th>
+                <th>Study Field</th>
+                <th>Current Job</th>
+                <th>Highest Qualification</th>
+                <th>Qualification Details</th>
+                <th>Working Experience</th>
+                <th>Spouse Name</th>
+                <th>Spouse Date of Birth</th>
+                <th>Spouse Gender</th>
+                <th>Spouse Passport No</th>
+                <th>Spouse Passport Expiry</th>
+                <th>Spouse IELTS/PTE</th>
+                <th>Spouse Degree</th>
+                <th>Spouse Study Field</th>
+                <th>Spouse Current Job</th>
+                <th>Spouse Qualification</th>
+                <th>Spouse Qualification Details</th>
+                <th>Spouse Experience</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+         
+            <tr>
+                <td>Canada</td>
+                <td>2</td>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>1985-05-20</td>
+                <td>Male</td>
+                <td>A1234567</td>
+                <td>2025-12-31</td>
+                <td>Married</td>
+                <td>7.5</td>
+                <td>Master’s Degree</td>
+                <td>Engineering</td>
+                <td>Software Engineer</td>
+                <td>Bachelor's Degree</td>
+                <td>Computer Science</td>
+                <td>5 years of experience in IT</td>
+                <td>Jane Doe</td>
+                <td>1988-07-15</td>
+                <td>Female</td>
+                <td>B9876543</td>
+                <td>2024-10-20</td>
+                <td>6.5</td>
+                <td>Bachelor’s Degree</td>
+                <td>Marketing</td>
+                <td>Marketing Manager</td>
+                <td>Bachelor's Degree</td>
+                <td>Business Administration</td>
+                <td>3 years of marketing experience</td>
+                <td>
+                    <form action="/ApproveRegistrationServlet" method="post">
+                        <input type="hidden" name="registration_id" value="1" />
+                        <button type="submit" class="approve-btn"><i class="fas fa-check"></i> Approve</button>
+                    </form>
+                </td>
+            </tr>
+          
+        </tbody>
+    </table>
+</body>
+</html>
